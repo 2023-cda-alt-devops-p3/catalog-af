@@ -3,7 +3,7 @@
 	import { formatDate } from '$lib/utils'
 	import * as config from '$lib/config'
 
-	export let data: { posts: Post[] };
+	export let data: { postsFiltered: Post[], category: string };
 </script>
 
 <svelte:head>
@@ -12,8 +12,9 @@
 
 <!-- Posts -->
 <section>
+    <h2>Catégorie : {data.category}</h2>
 	<ul class="posts">
-		{#each data.posts as post}
+		{#each data.postsFiltered as post}
 			<li class="post">
 				<a href={post.slug} class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
