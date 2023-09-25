@@ -1,17 +1,27 @@
-# create-svelte
+# :scroll: SvelteKit Mardown Catalog
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A project to show UML diagrams and Merise methods, built with SvelteKit and boosted with Markdown and others stuffs.
 
-## Creating a project
+## :pill: Stack
 
-If you're seeing this, you've probably already done this step. Congrats!
+![Svelte](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+## :loudspeaker: Important
+
+> Help to understand how to deploy a Svelte site on Netlify
+
+[adapter netlify](https://kit.svelte.dev/docs/adapter-netlify)
+
+## Cloning project
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/2023-cda-alt-devops-p3/md-catalog-af.git
+cd md-catalog-af/
 ```
 
 ## Developing
