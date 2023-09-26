@@ -4,12 +4,10 @@
 </script>
 
 <nav>
-  <!-- Title -->
 	<a href="/" class="title">
 		<b>{config.title}</b>
 	</a>
 
-  <!-- Navigation -->
 	<ul class="links">
 		<li>
 			<a href="/about">About</a>
@@ -19,8 +17,7 @@
 		</li>
 	</ul>
 
-  <!-- Theme -->
-  <Toggle />
+	<Toggle />
 </nav>
 
 <style>

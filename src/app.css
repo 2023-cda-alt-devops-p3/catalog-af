@@ -137,13 +137,21 @@ li {
 	padding-block: var(--size-1);
 }
 
+.prose :is(hr) {
+	margin-block: var(--size-fluid-2);
+}
+
 .prose :is(h2, h3, h4, h5, h6) {
-	margin-top: var(--size-8);
+	margin-top: var(--size-6);
 	margin-bottom: var(--size-3);
 }
 
 .prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-	margin-top: var(--size-7);
+	margin-top: var(--size-2);
+}
+
+.prose :is(blockquote) {
+	margin-top: var(--size-2);
 }
 
 .prose :is(ul, ol) {
@@ -154,6 +162,7 @@ li {
 .prose :is(ul, ol) li {
 	margin-block: var(--size-2);
 	padding-inline-start: var(--size-2);
+	max-inline-size: 100%;
 }
 
 .prose pre {
@@ -161,4 +170,10 @@ li {
 	padding: 1rem;
 	border-radius: 8px;
 	tab-size: 2;
+}
+
+.prose p,
+.prose blockquote,
+.prose blockquote p {
+	max-inline-size: 100%;
 }
