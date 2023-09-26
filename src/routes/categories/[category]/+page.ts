@@ -2,7 +2,7 @@ import type { Categories, Post } from '$lib/types';
 
 type FetchFunction = (url: string) => Promise<Response>;
 type LoadParams = {
-	slug: string;
+	category: string;
 };
 
 /**
@@ -26,7 +26,7 @@ export async function load({
 	// Parse the response as JSON
 	const posts: Post[] = await response.json();
 	// Filter the posts based on the category slug
-	const postsFiltered = posts.filter((post) => post.categories.includes(params.slug as Categories));
+	const postsFiltered = posts.filter((post) => post.categories.includes(params.category as Categories));
 	// Return an object containing the loaded posts and the category slug
-	return { postsFiltered, category: params.slug };
+	return { postsFiltered, category: params.category };
 }
