@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let src: string
-	export let alt: string
+	export let src: string;
+	export let alt: string;
 </script>
 
 <p class="center">
@@ -12,7 +12,7 @@
 		display: inline;
 		border-radius: 0%;
 		vertical-align: middle;
-    	border-style: none;
+		border-style: none;
 	}
 	.center {
 		margin-top: var(--size-4);

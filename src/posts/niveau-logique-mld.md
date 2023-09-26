@@ -41,4 +41,4 @@ Une table issue d'une association peut avoir des attributs au même titre que n'
 
 ---
 
-*Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)*
+_Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)_

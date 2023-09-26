@@ -9,6 +9,7 @@ published: true
 ---
 
 ## Niveau conceptuel (MCD)
+
 Le MCD permet de représenter le système d'information indépendamment de son aspect informatique, il doit être compréhensible par tous: informaticiens, employés, secrétaires, personnel de direction, etc.
 
 Pour ce faire la méthode Merise utilise 2 représentations:
@@ -27,6 +28,7 @@ Pour ce faire la méthode Merise utilise 2 représentations:
   > Exemples: HABITER, LOUER, JOUER, CARACTERISER, etc.
 
 ### L'entité
+
 Lorsque le dictionnaire des données est terminé on regroupe les données dans des ensembles cohérents: les **entités**.
 
 Par conventions ces **entités** sont symbolisées par des <ins>rectangles</ins>. Chaque entité porte un nom, qui l'identifie de manière unique. Ce nom sera obligatoirement un <ins>substantif</ins> en majuscules et au singulier.
@@ -45,6 +47,7 @@ Afin d'éviter les synonymes et les polysème on fera suivre le nom de l'attribu
 ![mcd](./images/merise-mcd-01.jpg)
 
 ### L'association
+
 On met les entités en relation au moyen d'une association.
 
 > Une association (ou une relation) est un lien entre plusieurs entités.
@@ -54,6 +57,7 @@ L'association représente la <ins>dynamique</ins> du système, elle exprime l'ac
 L'association est représentée par un ovale dont le titre est un <ins>verbe d'action ou d'état</ins>.
 
 ### La cardinalité
+
 > La cardinalité d’une patte reliant une association et une entité précise le nombre de fois minimal et maximal d’interventions d’une occurence de l'entité avec l'association. La cardinalité minimale doit être inférieure ou égale à la cardinalité maximale.
 
 Les seuls cardinalités admises sont donc :
@@ -74,8 +78,9 @@ Un service peut occupé <ins>1 ou plusieurs employés</ins>, la cardinalité 0 e
 ---
 
 ## Normaliser le MCD
->!!!Petit truc de la mort qui tue!!!  
->L'attribut d'une entité est toujours en relation [1-1 1-1] avec la clé.
+
+> !!!Petit truc de la mort qui tue!!!  
+> L'attribut d'une entité est toujours en relation [1-1 1-1] avec la clé.
 
 - **Première forme normale (1NF)**: Chaque cellule d'une table doit contenir une valeur unique et cette valeur doit être élémentaire.
 - **Deuxième forme normale (2NF)**: Chaque attribut de la table doit dépendre de la clé primaire au complet et non d'une partie de la clé.
@@ -84,4 +89,4 @@ Un service peut occupé <ins>1 ou plusieurs employés</ins>, la cardinalité 0 e
 
 ---
 
-*Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)*
+_Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)_

@@ -2,8 +2,8 @@
 	import Loader from './loader.svelte';
 
 	import type { Post } from '$lib/types';
-	import { formatDate } from '$lib/utils'
-	import * as config from '$lib/config'
+	import { formatDate } from '$lib/utils';
+	import * as config from '$lib/config';
 
 	export let data: { posts: Promise<Post[]> };
 
@@ -17,17 +17,17 @@
 
 <section>
 	{#await data.posts}
-	<Loader />
+		<Loader />
 	{:then posts}
-	<ul class="posts">
-		{#each posts as post}
-			<li class="post">
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</li>
-		{/each}
-	</ul>
+		<ul class="posts">
+			{#each posts as post}
+				<li class="post">
+					<a href={post.slug} class="title">{post.title}</a>
+					<p class="date">{formatDate(post.date)}</p>
+					<p class="description">{post.description}</p>
+				</li>
+			{/each}
+		</ul>
 	{/await}
 </section>
 

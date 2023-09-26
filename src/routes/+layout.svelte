@@ -1,18 +1,18 @@
 <script lang="ts">
-	import Footer from './footer.svelte'
-	import Header from './header.svelte'
-    import PageTransition from './transition.svelte'
+	import Footer from './footer.svelte';
+	import Header from './header.svelte';
+	import PageTransition from './transition.svelte';
 
-	import { initLazy } from '$lib/lazy'
+	import { initLazy } from '$lib/lazy';
 	initLazy();
 
-	import 'open-props/style'
-	import 'open-props/normalize'
-	import 'open-props/buttons'
+	import 'open-props/style';
+	import 'open-props/normalize';
+	import 'open-props/buttons';
 
-	import '../app.css'
+	import '../app.css';
 
-    export let data: { url: string }
+	export let data: { url: string };
 </script>
 
 <div class="layout">
@@ -20,8 +20,8 @@
 
 	<main>
 		<PageTransition url={data.url}>
-		    <slot />
-        </PageTransition>
+			<slot />
+		</PageTransition>
 	</main>
 
 	<Footer />

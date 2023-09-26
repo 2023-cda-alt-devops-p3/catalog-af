@@ -4,12 +4,12 @@ let initial = true;
 
 /**
  * Initialize the lazy loading feature.
- * 
+ *
  * This function should be called in the root layout of the application.
  * It sets the initial value to false to indicate that the client has finished loading.
  */
 export function initLazy() {
-    initial = false;
+	initial = false;
 }
 
 /**

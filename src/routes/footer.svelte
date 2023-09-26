@@ -1,9 +1,12 @@
 <script lang="ts">
-	import * as config from '$lib/config'
+	import * as config from '$lib/config';
 </script>
 
 <footer>
-	<p>{config.title} &copy {new Date().getFullYear()} &bull; <a href="https://github.com/arnaudfl">arnaudfl</a></p>
+	<p>
+		{config.title} &copy {new Date().getFullYear()} &bull;
+		<a href="https://github.com/arnaudfl">arnaudfl</a>
+	</p>
 </footer>
 
 <style>

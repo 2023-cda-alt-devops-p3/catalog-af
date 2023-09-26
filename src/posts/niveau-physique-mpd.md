@@ -20,15 +20,15 @@ Il s'agit de la représentation modélisée qui précède l'implémentation dans
 
 Selon l'étape de l'analyse on utilise un vocabulaire particulier.
 
-| MCD | Relation |	SGBD |
-| --- | --- | --- |
-| Entité | Association | Table |
-| Association | Association | Table |
-| Identifiant | Clé primaire | Clé étrangère |
-| | Clé étrangère | Clé étrangère |
-| Attribut, propriété | Attribut | Champs, colonne |
-| Occurence, instance | Occurence | Occurence, enregistrement |
+| MCD                 | Relation      | SGBD                      |
+| ------------------- | ------------- | ------------------------- |
+| Entité              | Association   | Table                     |
+| Association         | Association   | Table                     |
+| Identifiant         | Clé primaire  | Clé étrangère             |
+|                     | Clé étrangère | Clé étrangère             |
+| Attribut, propriété | Attribut      | Champs, colonne           |
+| Occurence, instance | Occurence     | Occurence, enregistrement |
 
 ---
 
-*Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)*
+_Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)_

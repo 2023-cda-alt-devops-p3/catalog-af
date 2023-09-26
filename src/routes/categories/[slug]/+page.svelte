@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { Post } from '$lib/types';
-	import { formatDate } from '$lib/utils'
-	import * as config from '$lib/config'
+	import { formatDate } from '$lib/utils';
+	import * as config from '$lib/config';
 
-	export let data: { postsFiltered: Post[], category: string };
+	export let data: { postsFiltered: Post[]; category: string };
 </script>
 
 <svelte:head>
@@ -12,14 +12,14 @@
 
 <!-- Posts -->
 <section>
-    <h2 class="tags">
-        <span class="surface-4 category">Catégorie :</span>
+	<h2 class="tags">
+		<span class="surface-4 category">Catégorie :</span>
 		<a href="/categories/{data.category}" class="surface-4">&num;{data.category}</a>
 	</h2>
 	<ul class="posts">
 		{#each data.postsFiltered as post}
 			<li class="post">
-				<a href=/{post.slug} class="title">{post.title}</a>
+				<a href="/{post.slug}" class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>
