@@ -8,15 +8,6 @@
 		<b>{config.title}</b>
 	</a>
 
-	<ul class="links">
-		<li>
-			<a href="/about">About</a>
-		</li>
-		<li>
-			<a href="/contact">Contact</a>
-		</li>
-	</ul>
-
 	<Toggle />
 </nav>
 

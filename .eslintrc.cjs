@@ -1,5 +1,8 @@
 module.exports = {
 	root: true,
+	"rules": {
+		"@typescript-eslint/ban-ts-comment": "off",
+	},
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
