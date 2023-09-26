@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Loader from './loader.svelte';
+	import img_cover from '$lib/images/cover.jpg'
 
 	import type { Post } from '$lib/types';
 	import { formatDate } from '$lib/utils';
@@ -23,7 +24,7 @@
 		<div class="cards">
 			{#each posts as post}
 				<div class="card">
-					<div class="cover"></div>
+					<div class="cover" style="background-image: url({img_cover});"></div>
 					<h5><a href={post.slug}>{post.title}</a></h5>
 					<p class="date">{formatDate(post.date)}</p>
 					<p class="description">{post.description}</p>
@@ -63,7 +64,6 @@
 	left:0;
 	height: 100px;
 	width: 100%;
-	background-image: url('./cover.jpg');
 	background-repeat: no-repeat;
 	flex-shrink: 0;
 	border-radius: 1rem 1rem 0 0;
