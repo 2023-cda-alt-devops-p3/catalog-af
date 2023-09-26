@@ -3,7 +3,6 @@ title: Niveau physique (MPD)
 description: Le niveau physique, il s'agit du MPD (Modèle Physique des Données).
 date: '2023-09-25'
 categories:
-  - méthodes
   - merise
 published: true
 ---

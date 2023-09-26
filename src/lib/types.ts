@@ -1,6 +1,6 @@
 import type { ComponentType } from 'svelte';
 
-export type Categories = 'uml' | 'diagrammes' | 'méthodes' | 'merise';
+export type Categories = 'uml' | 'merise';
 
 export type Post = {
 	title: string;

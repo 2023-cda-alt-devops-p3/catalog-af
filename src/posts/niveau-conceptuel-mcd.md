@@ -3,7 +3,6 @@ title: Niveau conceptuel (MCD)
 description: Le niveau conceptuel, il s'agit du MCD (Modèle Conceptuel des Données).
 date: '2023-09-25'
 categories:
-  - méthodes
   - merise
 published: true
 ---

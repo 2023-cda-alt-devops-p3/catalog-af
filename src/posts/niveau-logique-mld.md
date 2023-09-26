@@ -3,7 +3,6 @@ title: Niveau logique (MLD)
 description: Le niveau logique, il s'agit du MLD (Modèle Logique des Données).
 date: '2023-09-25'
 categories:
-  - méthodes
   - merise
 published: true
 ---
