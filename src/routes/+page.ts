@@ -17,6 +17,7 @@ export async function load({ fetch }: { fetch: FetchFunction }): Promise<object>
 	// const posts: Post[] = await response.json();
 	const postsResponse = await lazy<Post[]>(fetch('api/posts'), { awaitInitial: true });
 	const response = await postsResponse.promise;
+	// @ts-ignore-next-line
 	const posts: Post[] = await response.json();
 	// Return an object containing the loaded posts
 	return { posts };
