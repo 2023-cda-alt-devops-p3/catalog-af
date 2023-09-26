@@ -1,13 +1,13 @@
-import { writable } from 'svelte/store'
-import { browser } from '$app/environment'
+import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
 
-type Theme = 'light' | 'dark'
+type Theme = 'light' | 'dark';
 
 // we set the theme in `app.html` to prevent flashing
-const userTheme = browser && localStorage.getItem('color-scheme')
+const userTheme = browser && localStorage.getItem('color-scheme');
 
 // create the store
-export const theme = writable(userTheme ?? 'dark')
+export const theme = writable(userTheme ?? 'dark');
 
 /**
  * Toggles the theme between 'dark' and 'light'.
@@ -16,17 +16,17 @@ export const theme = writable(userTheme ?? 'dark')
  */
 export function toggleTheme() {
 	theme.update((currentTheme) => {
-	  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
-	  // Update the HTML color scheme attribute
-	  document.documentElement.setAttribute('color-scheme', newTheme);
-  
-	  // Save the theme to local storage
-	  localStorage.setItem('color-scheme', newTheme);
-  
-	  return newTheme;
+		const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+		// Update the HTML color scheme attribute
+		document.documentElement.setAttribute('color-scheme', newTheme);
+
+		// Save the theme to local storage
+		localStorage.setItem('color-scheme', newTheme);
+
+		return newTheme;
 	});
-  }
+}
 
 /**
  * Set the theme.
@@ -35,4 +35,4 @@ export function toggleTheme() {
 export function setTheme(newTheme: Theme) {
 	// Update the theme.
 	theme.set(newTheme);
-  }
+}

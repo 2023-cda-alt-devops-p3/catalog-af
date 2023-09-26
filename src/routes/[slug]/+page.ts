@@ -1,7 +1,7 @@
-import { error } from '@sveltejs/kit'
+import { error } from '@sveltejs/kit';
 
 type LoadParams = {
-	params: { slug: string }
+	params: { slug: string };
 };
 
 /**
@@ -13,15 +13,15 @@ type LoadParams = {
 export async function load({ params }: LoadParams): Promise<object> {
 	try {
 		// Dynamically import the post file based on the provided slug
-		const post = await import(`../../posts/${params.slug}.md`)
+		const post = await import(`../../posts/${params.slug}.md`);
 
 		// Return the post content and metadata
 		return {
 			content: post.default,
 			meta: post.metadata
-		}
+		};
 	} catch (e) {
 		// Throw an error if the post is not found
-		throw error(404, `Could not find ${params.slug}`)
+		throw error(404, `Could not find ${params.slug}`);
 	}
 }

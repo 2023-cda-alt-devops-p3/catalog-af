@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { PostData } from '$lib/types';
-	import { formatDate } from '$lib/utils'
+	import { formatDate } from '$lib/utils';
 
-	export let data : PostData
+	export let data: PostData;
 </script>
 
 <!-- SEO -->
@@ -13,20 +13,20 @@
 </svelte:head>
 
 <article>
-  <!-- Title -->
+	<!-- Title -->
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Publié le {formatDate(data.meta.date)}</p>
 	</hgroup>
 
-  <!-- Tags -->
+	<!-- Tags -->
 	<div class="tags">
 		{#each data.meta.categories as category}
 			<a href="/categories/{category}" class="surface-4">&num;{category}</a>
 		{/each}
 	</div>
 
-  <!-- Post -->
+	<!-- Post -->
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
@@ -34,7 +34,8 @@
 
 <style>
 	article {
-		max-inline-size: var(--size-content-3);
+		/* max-inline-size: var(--size-content-3); */
+		max-inline-size: 100%;
 		margin-inline: auto;
 	}
 

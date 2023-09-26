@@ -1,26 +1,34 @@
 <script lang="ts">
-	import type { Post } from '$lib/types';
-	import { formatDate } from '$lib/utils'
-	import * as config from '$lib/config'
+	import Loader from './loader.svelte';
 
-	export let data: { posts: Post[] };
+	import type { Post } from '$lib/types';
+	import { formatDate } from '$lib/utils';
+	import * as config from '$lib/config';
+
+	export let data: { posts: Promise<Post[]> };
+
+	// Assuming data.posts is an array of Post objects
+	data.posts = Promise.resolve(data.posts);
 </script>
 
 <svelte:head>
 	<title>{config.title}</title>
 </svelte:head>
 
-<!-- Posts -->
 <section>
-	<ul class="posts">
-		{#each data.posts as post}
-			<li class="post">
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</li>
-		{/each}
-	</ul>
+	{#await data.posts}
+		<Loader />
+	{:then posts}
+		<ul class="posts">
+			{#each posts as post}
+				<li class="post">
+					<a href={post.slug} class="title">{post.title}</a>
+					<p class="date">{formatDate(post.date)}</p>
+					<p class="description">{post.description}</p>
+				</li>
+			{/each}
+		</ul>
+	{/await}
 </section>
 
 <style>
@@ -30,7 +38,7 @@
 	}
 
 	.post {
-		max-inline-size: var(--size-content-3);
+		max-inline-size: 100%;
 	}
 
 	.post:not(:last-child) {
