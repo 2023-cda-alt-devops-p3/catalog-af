@@ -81,3 +81,7 @@ Un service peut occupé <ins>1 ou plusieurs employés</ins>, la cardinalité 0 e
 - **Deuxième forme normale (2NF)**: Chaque attribut de la table doit dépendre de la clé primaire au complet et non d'une partie de la clé.
 - **Troisième forme normale (3NF)**: Aucun attribut non-clé doit dépendre d'un autre attribut non-clé.
 - **Boyd-Codd**: tous les attributs non-clé ne sont pas source de dépendance fonctionnelle (DF) vers une partie de la clé
+
+---
+
+*Source : [MCD, MLD et MPD](https://louisvandevelde.be/index.php?dos=my&fic=meris)*

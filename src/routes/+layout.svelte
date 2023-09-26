@@ -3,17 +3,19 @@
 	import Header from './header.svelte'
     import PageTransition from './transition.svelte'
 
+	import { initLazy } from '$lib/lazy'
+	initLazy();
+
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
 
 	import '../app.css'
 
-    export let data
+    export let data: { url: string }
 </script>
 
 <div class="layout">
-  <!-- Header -->
 	<Header />
 
 	<main>
@@ -22,7 +24,6 @@
         </PageTransition>
 	</main>
 
-  <!-- Footer -->
 	<Footer />
 </div>
 

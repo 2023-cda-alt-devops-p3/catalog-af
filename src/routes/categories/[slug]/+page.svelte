@@ -34,7 +34,7 @@
 	}
 
 	.post {
-		max-inline-size: var(--size-content-3);
+		max-inline-size: 100%;
 	}
 
 	.post:not(:last-child) {
