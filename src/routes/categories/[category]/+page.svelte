@@ -24,7 +24,7 @@
 		{#each data.postsFiltered as post}
 		<div class="card">
 			<div class="cover" style="background-image: url({img_cover});"></div>
-			<h5><a href={post.slug}>{post.title}</a></h5>
+			<h5><a href=/{post.slug}>{post.title}</a></h5>
 			<p class="date">{formatDate(post.date)}</p>
 			<p class="description">{post.description}</p>
 		</div>
