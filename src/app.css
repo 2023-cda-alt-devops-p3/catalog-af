@@ -133,10 +133,6 @@ li {
 	color: var(--text-1);
 }
 
-.category {
-	padding-block: var(--size-1);
-}
-
 .prose :is(hr) {
 	margin-block: var(--size-fluid-2);
 }

@@ -2,6 +2,8 @@
 
 A project to show UML diagrams and Merise methods, built with SvelteKit and boosted with Markdown and others stuffs.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/797b2785-7715-4a78-8318-8885749aafd3/deploy-status)](https://app.netlify.com/sites/md-catalog-af/deploys)
+
 ## :pill: Stack
 
 ![Svelte](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)
