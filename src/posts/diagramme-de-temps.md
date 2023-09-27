@@ -37,15 +37,101 @@ La ligne de temps horizontale représente le temps. Elle est représentée par u
 
 Les événements sont représentés par des barres verticales. Les événements peuvent être des messages, des actions ou des événements internes.
 
-**Création d'un diagramme de temps**
+---
 
-Pour créer un diagramme de temps UML, suivez ces étapes :
+## Comment utiliser un diagramme de temps
 
-1. **Définir les événements.** La première étape consiste à identifier les événements qui se produisent dans le système.
-2. **Dessiner le diagramme.** Une fois que vous avez défini les événements, vous pouvez dessiner le diagramme.
+**Étape 1 : Identifier les événements**
 
-Voici quelques conseils pour créer des diagrammes de temps UML :
+La première étape consiste à identifier les événements qui se produisent dans le système.
 
-* Utilisez des noms clairs et concis pour les événements.
-* Utilisez des couleurs différentes pour les événements différents.
-* Utilisez des annotations pour fournir des informations supplémentaires.
+* **Événement** : un changement d'état dans le système.
+
+Pour identifier les événements, vous pouvez utiliser les techniques suivantes :
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Exemple**
+
+Voici quelques exemples d'événements pour un système de réservation de billets d'avion :
+
+* **Événement** : Un utilisateur demande une liste de vols.
+* **Événement** : Un utilisateur sélectionne un vol.
+* **Événement** : Un utilisateur réserve un vol.
+
+**Étape 2 : Identifier les états**
+
+Une fois que vous avez identifié les événements, vous pouvez identifier les états dans lesquels le système peut se trouver.
+
+* **État** : une condition dans laquelle le système se trouve à un moment donné.
+
+Pour identifier les états, vous pouvez utiliser les techniques suivantes :
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Exemple**
+
+Voici quelques exemples d'états pour un système de réservation de billets d'avion :
+
+* **État** : Le système est en attente d'une requête d'un utilisateur.
+* **État** : Le système affiche une liste de vols.
+* **État** : Le système a réservé un vol.
+
+**Étape 3 : Dessiner le diagramme**
+
+Une fois que vous avez identifié les événements et les états, vous pouvez dessiner le diagramme de temps.
+
+* **Les événements sont représentés par des rectangles.**
+* **Les états sont représentés par des lignes verticales.**
+* **Les transitions entre les états sont représentées par des flèches.**
+
+**Exemple**
+
+Voici un diagramme de temps pour un système de réservation de billets d'avion :
+
+```
+[Événement] Demande de liste de vols
+[État] En attente d'une requête
+[État] Affichage de la liste de vols
+[Événement] Sélection d'un vol
+[État] Réservation d'un vol
+```
+
+**Conseils**
+
+Voici quelques conseils pour créer des diagrammes de temps en UML :
+
+* Utilisez des noms clairs et concis pour les événements et les états.
+* Utilisez des transitions appropriées pour représenter les transitions entre les états.
+
+**Conclusion**
+
+Les diagrammes de temps en UML sont un outil utile pour visualiser le comportement d'un système au fil du temps. Ils peuvent être utilisés pour communiquer avec les développeurs et les utilisateurs.
+
+**En résumé, voici les étapes pour créer un diagramme de temps en UML :**
+
+1. Identifiez les événements.
+2. Identifiez les états.
+3. Dessinez le diagramme.
+
+**Pour identifier les événements, vous pouvez utiliser les techniques suivantes :**
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Pour identifier les états, vous pouvez utiliser les techniques suivantes :**
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Pour dessiner le diagramme, vous pouvez utiliser les éléments suivants :**
+
+* Les événements sont représentés par des rectangles.
+* Les états sont représentés par des lignes verticales.
+* Les transitions entre les états sont représentées par des flèches.
