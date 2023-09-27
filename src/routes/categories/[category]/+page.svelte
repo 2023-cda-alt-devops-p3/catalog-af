@@ -6,6 +6,7 @@
 	import * as config from '$lib/config';
 	
 	export let data: { postsFiltered: Post[]; category: string };
+	const category = data.category.toUpperCase();
 </script>
 
 <svelte:head>
@@ -14,11 +15,13 @@
 
 <!-- Posts -->
 <section>
-	<h2 class="tags">
-		<span class="surface-4 category">
-			<i class="fa-solid fa-bookmark"></i>
-			{data.category
-			}</span>
+	<h2 class="category">
+		{#if category === 'UML'}
+		<i class="fa-solid fa-diagram-predecessor"></i>
+		{:else}
+		<i class="fa-solid fa-database"></i>
+		{/if}
+		{category}
 	</h2>
 	<div class="cards">
 		{#each data.postsFiltered as post}
@@ -34,8 +37,7 @@
 
 <style>
 	.category {
-		padding-block: var(--size-1);
-		padding: var(--size-1);
+		padding: var(--size-8);
 	}
 	.cards {
 		display: flex;
