@@ -38,16 +38,99 @@ Les relations entre les parties d'un composant sont représentées par des ligne
 * **Composition** : une partie est un sous-ensemble d'un composant.
 * **Agrégation** : une partie est un composant qui est associé à un autre composant.
 
-**Création d'un diagramme de structure composite**
+---
 
-Pour créer un diagramme de structure composite UML, suivez ces étapes :
+## Comment utiliser un diagramme de structure composite
 
-1. **Définir le composant.** La première étape consiste à identifier le composant que vous souhaitez représenter.
-2. **Définir les parties.** Les parties représentent les éléments qui composent le composant.
-3. **Dessiner le diagramme.** Une fois que vous avez défini le composant et les parties, vous pouvez dessiner le diagramme.
+**Étape 1 : Identifier les composants**
 
-Voici quelques conseils pour créer des diagrammes de structure composite UML :
+La première étape consiste à identifier les composants qui composent le système.
 
-* Utilisez des noms clairs et concis pour le composant et les parties.
-* Utilisez des relations appropriées pour représenter les relations entre les parties.
-* Utilisez des annotations pour fournir des informations supplémentaires.
+* **Composant** : une partie d'un système qui peut être assemblée avec d'autres composants pour former un système plus complexe.
+
+Pour identifier les composants, vous pouvez utiliser les techniques suivantes :
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Exemple**
+
+Voici quelques exemples de composants pour un système de réservation de billets d'avion :
+
+* **Composant** : Interface utilisateur
+* **Composant** : Logiciel de réservation
+* **Composant** : Base de données des vols
+
+**Étape 2 : Identifier les relations entre les composants**
+
+Une fois que vous avez identifié les composants, vous pouvez identifier les relations entre eux.
+
+* **Relation** : une association entre deux composants.
+
+Pour identifier les relations entre les composants, vous pouvez utiliser les techniques suivantes :
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Exemple**
+
+Voici quelques exemples de relations entre les composants pour un système de réservation de billets d'avion :
+
+* **Relation** : L'interface utilisateur dépend du logiciel de réservation.
+* **Relation** : Le logiciel de réservation dépend de la base de données des vols.
+
+**Étape 3 : Dessiner le diagramme**
+
+Une fois que vous avez identifié les composants et les relations entre eux, vous pouvez dessiner le diagramme de structure composite.
+
+* **Les composants sont représentés par des rectangles.**
+* **Les relations entre les composants sont représentées par des lignes.**
+
+**Exemple**
+
+Voici un diagramme de structure composite pour un système de réservation de billets d'avion :
+
+```
+[Composant] Interface utilisateur
+[Composant] Logiciel de réservation
+[Composant] Base de données des vols
+
+[Relation] Interface utilisateur -> Logiciel de réservation
+[Relation] Logiciel de réservation -> Base de données des vols
+```
+
+**Conseils**
+
+Voici quelques conseils pour créer des diagrammes de structure composite en UML :
+
+* Utilisez des noms clairs et concis pour les composants.
+* Utilisez des relations appropriées pour représenter les relations entre les composants.
+
+**Conclusion**
+
+Les diagrammes de structure composite en UML sont un outil utile pour comprendre l'architecture d'un système. Ils peuvent être utilisés pour communiquer avec les développeurs et les utilisateurs.
+
+**En résumé, voici les étapes pour créer un diagramme de structure composite en UML :**
+
+1. Identifiez les composants.
+2. Identifiez les relations entre les composants.
+3. Dessinez le diagramme.
+
+**Pour identifier les composants, vous pouvez utiliser les techniques suivantes :**
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Pour identifier les relations entre les composants, vous pouvez utiliser les techniques suivantes :**
+
+* Analyser le cahier des charges ou les exigences du système.
+* Interviewer les développeurs du système.
+* Observer le système en fonctionnement.
+
+**Pour dessiner le diagramme, vous pouvez utiliser les éléments suivants :**
+
+* Les composants sont représentés par des rectangles.
+* Les relations entre les composants sont représentées par des lignes.
