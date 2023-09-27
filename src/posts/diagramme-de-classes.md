@@ -1,13 +1,11 @@
 ---
 title: Diagramme de classes
-description: Information sur les diagrammes de classes.
+description: Il est utilisé pour comprendre comment les objets sont organisés, et pour identifier les relations entre les objets.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de classes
 
 Un **diagramme de classes** est un type de diagramme utilisé en **génie logiciel** pour représenter les **classes** et les **interfaces** d'un système, ainsi que leurs **relations**. Il fait partie de la partie **statique** d'UML et ne s'intéresse pas aux aspects temporels et dynamiques.
 

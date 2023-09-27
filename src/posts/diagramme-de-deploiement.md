@@ -1,13 +1,11 @@
 ---
 title: Diagramme de déploiement
-description: Information sur les diagrammes de déploiement.
+description: Il est utilisé pour visualiser la disposition physique des composants du système et les relations entre eux.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de déploiement
 
 Un diagramme de déploiement UML est un type de diagramme de structure qui représente la configuration physique d'un système. Il montre les composants logiciels et matériels du système, ainsi que les relations entre eux.
 

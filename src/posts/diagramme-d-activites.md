@@ -1,13 +1,11 @@
 ---
 title: Diagramme d'activités
-description: Information sur les diagrammes d'activité.
+description: Utilisé pour comprendre comment une tâche est réalisée, et pour identifier les différents points de décision et les interactions entre les différentes étapes de la tâche.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme d’activités
 
 Un diagramme d'activités en UML est un type de diagramme de comportement qui représente le flux de contrôle d'un système. Il peut être utilisé pour visualiser les actions qui sont exécutées, les décisions qui sont prises, et les flux de données qui sont utilisés.
 

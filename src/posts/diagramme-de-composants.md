@@ -1,13 +1,11 @@
 ---
 title: Diagramme de composants
-description: Information sur les diagrammes de composants.
+description: Il est utilisé pour visualiser l'organisation des composants du système et les relations de dépendance entre eux.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de composants
 
 Un **diagramme de composants** est un type de diagramme utilisé en **génie logiciel** pour représenter les **relations** entre les différents **composants** d'un système dans une vue d'ensemble statique. Les composants sont des éléments modulaires d'un système qui encapsulent un certain nombre de structures complexes et sont indépendants les uns des autres. Les diagrammes de composants peuvent inclure des aspects de modélisation à la fois logiques et physiques.
 

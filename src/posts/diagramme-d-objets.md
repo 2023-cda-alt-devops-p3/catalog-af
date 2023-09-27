@@ -1,13 +1,11 @@
 ---
 title: Diagramme d'objets
-description: Information sur les diagrammes d'objets.
+description: Il est utilisé pour comprendre comment les objets interagissent entre eux, et pour identifier les objets qui sont les plus importants pour une application.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme d'objets
 
 Un diagramme d'objets en UML est un type de diagramme de structure qui représente les instances d'une classe à un moment donné. Il peut être utilisé pour visualiser les objets qui existent dans un système, les relations entre les objets, et les données qui sont stockées dans les objets.
 

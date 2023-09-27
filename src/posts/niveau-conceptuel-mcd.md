@@ -1,13 +1,11 @@
 ---
 title: Niveau conceptuel (MCD)
-description: Le niveau conceptuel, il s'agit du MCD (Modèle Conceptuel des Données).
+description: Il est utilisé pour capturer les informations essentielles d'un domaine d'application, telles que les entités, les relations et les attributs.
 date: '2023-09-25'
 categories:
   - merise
 published: true
 ---
-
-## Niveau conceptuel (MCD)
 
 Le MCD permet de représenter le système d'information indépendamment de son aspect informatique, il doit être compréhensible par tous: informaticiens, employés, secrétaires, personnel de direction, etc.
 

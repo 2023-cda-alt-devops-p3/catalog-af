@@ -1,13 +1,11 @@
 ---
 title: Diagramme de paquetages
-description: Information sur les diagrammes de paquetages.
+description: Il est utilisé pour visualiser l'organisation des paquetages du système et les relations entre eux.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de paquetages
 
 Un diagramme de paquetages UML est un type de diagramme de structure qui représente les relations entre les paquetages d'un système. Un paquetage est un regroupement logique d'éléments UML, tels que des classes, des interfaces, des diagrammes et des documents.
 

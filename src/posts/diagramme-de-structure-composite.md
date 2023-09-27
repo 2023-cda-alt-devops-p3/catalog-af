@@ -1,13 +1,11 @@
 ---
 title: Diagramme de structure composite
-description: Information sur les diagrammes de structure composite.
+description: Il est utilisé pour visualiser les composants et les relations entre eux.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de structure composite
 
 Un diagramme de structure composite UML est un type de diagramme de structure qui représente la structure interne d'un composant. Un composant est un élément logiciel qui peut être mis en œuvre comme une unité autonome.
 
