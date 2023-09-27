@@ -1,13 +1,11 @@
 ---
 title: Diagramme de communication
-description: Information sur les diagrammes de communication.
+description: Il est utilisé pour visualiser le flux d'informations entre les objets, et pour identifier les objets qui sont importants pour une interaction.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de communication
 
 Un **diagramme de communication** est un type de diagramme utilisé en **génie logiciel** pour représenter les **interactions** entre les **objets logiciels**. Il montre comment les parties d'un système interagissent ou communiquent entre elles. Les diagrammes de communication sont utilisés pour décrire les interactions entre les objets d'un système, en se concentrant sur la manière dont ils communiquent.
 

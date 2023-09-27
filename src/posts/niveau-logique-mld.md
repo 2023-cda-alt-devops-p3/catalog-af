@@ -1,13 +1,11 @@
 ---
 title: Niveau logique (MLD)
-description: Le niveau logique, il s'agit du MLD (Modèle Logique des Données).
+description: Il est utilisé pour définir la structure des données d'un système, telles que les tables, les colonnes et les contraintes.
 date: '2023-09-25'
 categories:
   - merise
 published: true
 ---
-
-## Niveau logique (MLD)
 
 Les entités mises en relation deviennent des **tables**.
 

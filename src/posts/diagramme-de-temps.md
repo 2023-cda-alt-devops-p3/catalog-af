@@ -1,13 +1,11 @@
 ---
 title: Diagramme de temps
-description: Information sur les diagrammes de temps.
+description: Il est utilisé pour visualiser l'évolution d'un système au cours du temps.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de temps
 
 Un diagramme de temps UML est un type de diagramme d'interaction qui représente le comportement d'un système au fil du temps. Il peut être utilisé pour visualiser la durée des événements, les intervalles entre les événements, et les contraintes temporelles.
 

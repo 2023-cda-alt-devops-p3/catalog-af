@@ -1,13 +1,11 @@
 ---
 title: Diagramme d'apercu des interactions
-description: Information sur les diagrammes d'apercu des interactions.
+description: Il est utilisé pour comprendre comment les composants communiquent entre eux, et pour identifier les interactions qui sont les plus importantes.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme d’apercu des interactions
 
 Un diagramme d'aperçu des interactions en UML est un type de diagramme de comportement qui permet de visualiser le flux de contrôle d'un système à un niveau élevé. Il est composé d'une série de diagrammes d'interaction, tels que des diagrammes de séquence, des diagrammes de communication ou des diagrammes d'état.
 

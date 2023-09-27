@@ -1,13 +1,11 @@
 ---
 title: Diagramme de profil
-description: Information sur les diagrammes de profil.
+description: Il est utilisé pour définir des stéréotypes, des définitions de balise et des contraintes qui peuvent être appliqués à des éléments UML.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de profil
 
 Un diagramme de profil UML est un type de diagramme de structure qui représente les informations supplémentaires qui peuvent être ajoutées aux éléments UML. Ces informations supplémentaires peuvent être utilisées pour personnaliser les éléments UML pour un domaine d'application ou une plateforme spécifique.
 

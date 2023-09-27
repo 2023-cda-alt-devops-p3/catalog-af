@@ -1,13 +1,11 @@
 ---
 title: Diagramme de séquence
-description: Information sur les diagrammes de séquence.
+description: Il est utilisé pour visualiser le comportement d'un système en termes d'interactions entre ses objets.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de séquence
 
 Un diagramme de séquence UML est un type de diagramme d'interaction qui représente le flux de messages entre les objets d'un système. Les objets sont des instances de classes.
 

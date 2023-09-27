@@ -1,13 +1,11 @@
 ---
 title: Diagramme de cas d'utilisation
-description: Information sur les diagrammes de cas d'utilisation.
+description: Il est utilisé pour comprendre comment les utilisateurs utilisent un système, et pour identifier les fonctions du système qui sont les plus importantes.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme de cas d'utilisation
 
 Un diagramme de cas d'utilisation en UML est un type de diagramme de comportement qui représente les interactions entre un système et ses utilisateurs. Il peut être utilisé pour visualiser les fonctionnalités d'un système et les besoins des utilisateurs.
 

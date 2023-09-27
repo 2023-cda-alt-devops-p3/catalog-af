@@ -1,13 +1,11 @@
 ---
 title: Diagramme des états et transitions
-description: Information sur les diagrammes des états et transitions.
+description: Il est utilisé pour visualiser comment un objet ou un système réagit aux événements.
 date: '2023-09-25'
 categories:
   - uml
 published: true
 ---
-
-## Diagramme des états et transitions
 
 Un diagramme des états et transitions en UML est un type de diagramme d'état qui représente le comportement d'un objet au fil du temps. Il peut être utilisé pour visualiser les états d'un objet, les transitions entre les états, et les événements qui déclenchent les transitions.
 
