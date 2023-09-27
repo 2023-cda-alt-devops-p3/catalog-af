@@ -170,6 +170,12 @@ li {
 	padding: 1rem;
 	border-radius: 8px;
 	tab-size: 2;
+	white-space: pre-wrap;
+  	word-break: break-all;
+}
+
+.prose pre code {
+	max-inline-size: 100%;
 }
 
 .prose p,
