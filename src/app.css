@@ -138,6 +138,10 @@ li {
 }
 
 .prose :is(h2, h3, h4, h5, h6) {
+	max-inline-size: 100%;
+}
+
+.prose :is(h2, h3, h4, h5, h6) {
 	margin-top: var(--size-6);
 	margin-bottom: var(--size-3);
 }
