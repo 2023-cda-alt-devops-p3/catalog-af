@@ -4,8 +4,8 @@
 
 <footer>
 	<p>
-		{config.title} &copy {new Date().getFullYear()} &bull;
-		<a href="https://github.com/arnaudfl">arnaudfl</a>
+		🎓 {config.title} &copy {new Date().getFullYear()} &bull;
+		<a href="https://github.com/arnaudfl">👽 arnaudfl</a>
 	</p>
 </footer>
 

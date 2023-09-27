@@ -1,56 +1,89 @@
 <script lang="ts">
+	import img_cover from '$lib/images/cover.jpg'
+	
 	import type { Post } from '$lib/types';
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
-
+	
 	export let data: { postsFiltered: Post[]; category: string };
 </script>
 
 <svelte:head>
-	<title>{config.title}</title>
+<title>{config.title}</title>
 </svelte:head>
 
 <!-- Posts -->
 <section>
 	<h2 class="tags">
-		<span class="surface-4 category">Catégorie :</span>
-		<a href="/categories/{data.category}" class="surface-4">&num;{data.category}</a>
+		<span class="surface-4 category">
+			<i class="fa-solid fa-bookmark"></i>
+			{data.category
+			}</span>
 	</h2>
-	<ul class="posts">
+	<div class="cards">
 		{#each data.postsFiltered as post}
-			<li class="post">
-				<a href="/{post.slug}" class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</li>
+		<div class="card">
+			<div class="cover" style="background-image: url({img_cover});"></div>
+			<h5><a href={post.slug}>{post.title}</a></h5>
+			<p class="date">{formatDate(post.date)}</p>
+			<p class="description">{post.description}</p>
+		</div>
 		{/each}
-	</ul>
+	</div>
 </section>
 
 <style>
-	.posts {
-		display: grid;
-		gap: 2rem;
+	.category {
+		padding-block: var(--size-1);
+		padding: var(--size-1);
 	}
-
-	.post {
-		max-inline-size: 100%;
+	.cards {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		max-inline-size: calc(var(--size-content-2) * 4);
+		gap: var(--size-5);
+		padding: var(--size-5);
 	}
-
-	.post:not(:last-child) {
-		border-bottom: 1px solid var(--border);
-		padding-bottom: var(--size-7);
+	
+	.card {
+		position: relative;
+		flex-basis: var(--size-content-2);
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-2);
+		background: var(--surface-3);
+		border: 1px solid var(--surface-1);
+		padding: var(--size-4);
+		border-radius: var(--radius-3);
+		box-shadow: var(--shadow-2);
+		padding-top: 110px;
 	}
-
-	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
+	
+	.card .cover {
+		position: absolute;
+		top:0;
+		left:0;
+		height: 100px;
+		width: 100%;
+		background-repeat: no-repeat;
+		flex-shrink: 0;
+		border-radius: 1rem 1rem 0 0;
 	}
-
+	
+	.card > h5 {
+		line-height: var(--font-lineheight-1);
+	}
+	
+	.cards::after {
+		content: "";
+		flex: auto;
+	} 
+	
 	.date {
 		color: var(--text-2);
 	}
-
+	
 	.description {
 		margin-top: var(--size-3);
 	}
