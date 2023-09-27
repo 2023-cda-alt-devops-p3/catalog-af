@@ -19,6 +19,12 @@ A project to show UML diagrams and Merise methods, built with SvelteKit and boos
 
 [adapter netlify](https://kit.svelte.dev/docs/adapter-netlify)
 
+## :books: Documentation
+
+Documentation for diagrams is available on [Diagrams](/documentation/diagrams.md)
+
+Documentation for requirements is available on [Requirements](/documentation/requirements.md)
+
 ## Cloning project
 
 ```bash
