@@ -138,7 +138,7 @@ li {
 }
 
 .prose :is(h2, h3, h4, h5, h6) {
-	max-inline-size: 100%;
+	max-inline-size: var(--size-header-3);
 }
 
 .prose :is(h2, h3, h4, h5, h6) {
@@ -172,6 +172,8 @@ li {
 	tab-size: 2;
 	white-space: pre-wrap;
   	word-break: break-all;
+	margin-top: var(--size-4);
+	margin-bottom: var(--size-4);
 }
 
 .prose pre code {
@@ -182,6 +184,14 @@ li {
 .prose blockquote,
 .prose blockquote p {
 	max-inline-size: 100%;
+}
+
+.prose :is(table) {
+	margin-top: var(--size-4);
+}
+
+.prose :where(table tr:hover td), :where(tbody tr:nth-child(2n):hover td) {
+    background-color: var(--surface-4);
 }
 
 .fa-solid {

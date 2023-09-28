@@ -43,6 +43,7 @@
 	
 	h1 {
 		text-transform: capitalize;
+		max-inline-size: var(--size-header-3);
 	}
 	
 	h1 + p {
