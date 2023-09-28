@@ -7,8 +7,6 @@ categories:
 published: true
 ---
 
-## Niveau physique (MPD)
-
 Un niveau physique MPD est une représentation de la structure des données d'un système, telle qu'elle est stockée sur un système de stockage. Il est utilisé pour définir la façon dont les données sont physiquement stockées et gérées.
 
 En termes simples, un niveau physique MPD est une description de la façon dont les données sont organisées sur un disque dur, une bande ou un autre type de stockage. Il décrit les fichiers, les répertoires et les index qui sont utilisés pour stocker les données.
@@ -34,6 +32,7 @@ Il s'agit de la représentation modélisée qui précède l'implémentation dans
 ## Vocabulaire
 
 Selon l'étape de l'analyse on utilise un vocabulaire particulier.
+
 
 | MCD                 | Relation      | SGBD                      |
 | ------------------- | ------------- | ------------------------- |
