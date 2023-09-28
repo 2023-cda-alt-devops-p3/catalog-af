@@ -5,7 +5,7 @@ html {
 	/* font */
 	--font-sans: 'Manrope', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
-
+	
 	/* dark */
 	--brand-dark: var(--orange-3);
 	--text-1-dark: var(--gray-3);
@@ -16,7 +16,7 @@ html {
 	--surface-4-dark: var(--gray-9);
 	--background-dark: var(--gradient-8);
 	--border-dark: var(--gray-9);
-
+	
 	/* light */
 	--brand-light: var(--orange-10);
 	--text-1-light: var(--gray-8);
@@ -31,7 +31,7 @@ html {
 
 :root {
 	color-scheme: dark;
-
+	
 	--brand: var(--brand-dark);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
@@ -46,7 +46,7 @@ html {
 @media (prefers-color-scheme: light) {
 	:root {
 		color-scheme: light;
-
+		
 		--brand: var(--brand-light);
 		--text-1: var(--text-1-light);
 		--text-2: var(--text-2-light);
@@ -61,7 +61,7 @@ html {
 
 [color-scheme='dark'] {
 	color-scheme: dark;
-
+	
 	--brand: var(--brand-dark);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
@@ -75,7 +75,7 @@ html {
 
 [color-scheme='light'] {
 	color-scheme: light;
-
+	
 	--brand: var(--brand-light);
 	--text-1: var(--text-1-light);
 	--text-2: var(--text-2-light);
@@ -171,7 +171,7 @@ li {
 	border-radius: 8px;
 	tab-size: 2;
 	white-space: pre-wrap;
-  	word-break: break-all;
+	word-break: break-all;
 	margin-top: var(--size-4);
 	margin-bottom: var(--size-4);
 }
@@ -191,37 +191,38 @@ li {
 }
 
 .prose :where(table tr:hover td), :where(tbody tr:nth-child(2n):hover td) {
-    background-color: var(--surface-4);
+	background-color: var(--surface-4);
 }
 
 .fa-solid {
 	font-weight: 900;
 	-webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-    text-rendering: auto;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-rendering: auto;
 	vertical-align: text-bottom;
 }
 
 .fa-database {
 	&::after {
-	  content: url('/assets/database-solid.svg');
-	  display: inline-block;
-	  height: var(--font-size-2);
-	  width: var(--font-size-2);
+		content: url('/assets/database-solid.svg');
+		display: inline-block;
+		height: var(--font-size-2);
+		width: var(--font-size-2);
+		color: var(--text-2);
 	}
-  }
+}
 
-  .fa-diagram-predecessor {
+.fa-diagram-predecessor {
 	&::after {
 		content: url('/assets/diagram-successor-solid.svg');
 		display: inline-block;
 		height: var(--font-size-2);
 		width: var(--font-size-2);
-	  }
-  }
+	}
+}
 
 h2 .fa-database:after, h2 .fa-diagram-predecessor:after {
 	height: var(--font-size-7);

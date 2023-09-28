@@ -4,7 +4,7 @@
 	import { theme, toggleTheme } from '$lib/theme';
 </script>
 
-<button on:click={toggleTheme} aria-label="Toggle theme">
+<button class="toggle" on:click={toggleTheme} aria-label="Toggle theme">
 	{#if $theme === 'dark'}
 		<div in:fly={{ y: 10 }}>
 			<Sun />
@@ -19,7 +19,11 @@
 </button>
 
 <style>
-	button {
+	.toggle {
+		display: block;
+		position: absolute;
+		top: var(--size-7);
+		right: var(--size-7);
 		padding: 0;
 		font-weight: inherit;
 		background: none;
@@ -28,8 +32,15 @@
 		overflow: hidden;
 	}
 
-	button > * {
+	button.toggle > * {
 		display: flex;
 		gap: var(--size-2);
+	}
+
+	@media (min-width: 768px) {
+		button.toggle {
+			display: normal;
+			position:initial;
+		}
 	}
 </style>
