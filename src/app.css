@@ -203,28 +203,23 @@ li {
 	line-height: 1;
 	text-rendering: auto;
 	vertical-align: text-bottom;
+	height: var(--font-size-2);
+	width: var(--font-size-2);
 }
 
 .fa-database {
-	&::after {
-		content: url('/assets/database-solid.svg');
-		display: inline-block;
-		height: var(--font-size-2);
-		width: var(--font-size-2);
-		color: var(--text-2);
-	}
+	background-color: var(--text-2);
+    -webkit-mask:  url('/assets/database-solid.svg') no-repeat 50% 50%;
+    mask: url('/assets/database-solid.svg') no-repeat 50% 50%;
 }
 
 .fa-diagram-predecessor {
-	&::after {
-		content: url('/assets/diagram-successor-solid.svg');
-		display: inline-block;
-		height: var(--font-size-2);
-		width: var(--font-size-2);
-	}
+	background-color: var(--text-2);
+    -webkit-mask:  url('/assets/diagram-successor-solid.svg') no-repeat 50% 50%;
+    mask: url('/assets/diagram-successor-solid.svg') no-repeat 50% 50%;
 }
 
-h2 .fa-database:after, h2 .fa-diagram-predecessor:after {
+h2 .fa-solid {
 	height: var(--font-size-7);
 	width: var(--font-size-7);
 }

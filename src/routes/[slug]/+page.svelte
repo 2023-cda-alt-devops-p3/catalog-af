@@ -64,8 +64,8 @@
 		border-radius: var(--radius-round);
 	}
 
-	.tags .fa-database:after, .tags .fa-diagram-predecessor:after {
-			height: var(--font-size-2);
-			width: var(--font-size-2);
-		}
+	.tags .fa-solid {
+		height: var(--font-size-2);
+		width: var(--font-size-2);
+	}
 </style>
