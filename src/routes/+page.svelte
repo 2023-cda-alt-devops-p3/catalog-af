@@ -15,6 +15,7 @@
 
 <svelte:head>
 <title>{config.title}</title>
+<meta property="description" content={config.description} />
 </svelte:head>
 
 <section>
