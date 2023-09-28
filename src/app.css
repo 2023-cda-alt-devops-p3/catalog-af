@@ -1,225 +1,201 @@
-@import '@fontsource/manrope';
-@import '@fontsource/jetbrains-mono';
+@import "@fontsource/manrope";
+@import "@fontsource/jetbrains-mono";
 
 html {
-	/* font */
-	--font-sans: 'Manrope', sans-serif;
-	--font-mono: 'JetBrains Mono', monospace;
-	
-	/* dark */
-	--brand-dark: var(--orange-3);
-	--text-1-dark: var(--gray-3);
-	--text-2-dark: var(--gray-5);
-	--surface-1-dark: var(--gray-12);
-	--surface-2-dark: var(--gray-11);
-	--surface-3-dark: var(--gray-10);
-	--surface-4-dark: var(--gray-9);
-	--background-dark: var(--gradient-8);
-	--border-dark: var(--gray-9);
-	
-	/* light */
-	--brand-light: var(--orange-10);
-	--text-1-light: var(--gray-8);
-	--text-2-light: var(--gray-7);
-	--surface-1-light: var(--gray-0);
-	--surface-2-light: var(--gray-1);
-	--surface-3-light: var(--gray-2);
-	--surface-4-light: var(--gray-3);
-	--background-light: none;
-	--border-light: var(--gray-4);
+    --font-sans: 'Manrope', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --brand-dark: var(--orange-3);
+    --text-1-dark: var(--gray-3);
+    --text-2-dark: var(--gray-5);
+    --surface-1-dark: var(--gray-12);
+    --surface-2-dark: var(--gray-11);
+    --surface-3-dark: var(--gray-10);
+    --surface-4-dark: var(--gray-9);
+    --background-dark: var(--gradient-8);
+    --border-dark: var(--gray-9);
+    --brand-light: var(--orange-10);
+    --text-1-light: var(--gray-8);
+    --text-2-light: var(--gray-7);
+    --surface-1-light: var(--gray-0);
+    --surface-2-light: var(--gray-1);
+    --surface-3-light: var(--gray-2);
+    --surface-4-light: var(--gray-3);
+    --background-light: none;
+    --border-light: var(--gray-4)
 }
 
 :root {
-	color-scheme: dark;
-	
-	--brand: var(--brand-dark);
-	--text-1: var(--text-1-dark);
-	--text-2: var(--text-2-dark);
-	--surface-1: var(--surface-1-dark);
-	--surface-2: var(--surface-2-dark);
-	--surface-3: var(--surface-3-dark);
-	--surface-4: var(--surface-4-dark);
-	--background: var(--background-dark);
-	--border: var(--border-dark);
+    color-scheme: dark;
+    --brand: var(--brand-dark);
+    --text-1: var(--text-1-dark);
+    --text-2: var(--text-2-dark);
+    --surface-1: var(--surface-1-dark);
+    --surface-2: var(--surface-2-dark);
+    --surface-3: var(--surface-3-dark);
+    --surface-4: var(--surface-4-dark);
+    --background: var(--background-dark);
+    --border: var(--border-dark)
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color-scheme: light;
-		
-		--brand: var(--brand-light);
-		--text-1: var(--text-1-light);
-		--text-2: var(--text-2-light);
-		--surface-1: var(--surface-1-light);
-		--surface-2: var(--surface-2-light);
-		--surface-3: var(--surface-3-light);
-		--surface-4: var(--surface-4-light);
-		--background: var(--background-light);
-		--border: var(--border-light);
-	}
+@media (prefers-color-scheme:light) {
+    :root {
+        color-scheme: light;
+        --brand: var(--brand-light);
+        --text-1: var(--text-1-light);
+        --text-2: var(--text-2-light);
+        --surface-1: var(--surface-1-light);
+        --surface-2: var(--surface-2-light);
+        --surface-3: var(--surface-3-light);
+        --surface-4: var(--surface-4-light);
+        --background: var(--background-light);
+        --border: var(--border-light)
+    }
 }
 
-[color-scheme='dark'] {
-	color-scheme: dark;
-	
-	--brand: var(--brand-dark);
-	--text-1: var(--text-1-dark);
-	--text-2: var(--text-2-dark);
-	--surface-1: var(--surface-1-dark);
-	--surface-2: var(--surface-2-dark);
-	--surface-3: var(--surface-3-dark);
-	--surface-4: var(--surface-4-dark);
-	--background: var(--background-dark);
-	--border: var(--border-dark);
+[color-scheme=dark] {
+    color-scheme: dark;
+    --brand: var(--brand-dark);
+    --text-1: var(--text-1-dark);
+    --text-2: var(--text-2-dark);
+    --surface-1: var(--surface-1-dark);
+    --surface-2: var(--surface-2-dark);
+    --surface-3: var(--surface-3-dark);
+    --surface-4: var(--surface-4-dark);
+    --background: var(--background-dark);
+    --border: var(--border-dark)
 }
 
-[color-scheme='light'] {
-	color-scheme: light;
-	
-	--brand: var(--brand-light);
-	--text-1: var(--text-1-light);
-	--text-2: var(--text-2-light);
-	--surface-1: var(--surface-1-light);
-	--surface-2: var(--surface-2-light);
-	--surface-3: var(--surface-3-light);
-	--surface-4: var(--surface-4-light);
-	--background: var(--background-light);
-	--border: var(--border-light);
+[color-scheme=light] {
+    color-scheme: light;
+    --brand: var(--brand-light);
+    --text-1: var(--text-1-light);
+    --text-2: var(--text-2-light);
+    --surface-1: var(--surface-1-light);
+    --surface-2: var(--surface-2-light);
+    --surface-3: var(--surface-3-light);
+    --surface-4: var(--surface-4-light);
+    --background: var(--background-light);
+    --border: var(--border-light)
 }
 
-html,
-body {
-	height: 100%;
+body,html {
+    height: 100%
 }
 
 html {
-	color: var(--text-1);
-	accent-color: var(--link);
-	background-image: var(--background);
-	background-attachment: fixed;
+    color: var(--text-1);
+    accent-color: var(--link);
+    background-image: var(--background);
+    background-attachment: fixed
 }
 
 img {
-	border-radius: var(--radius-3);
+    border-radius: var(--radius-3)
 }
 
-ul,
-ol {
-	list-style: none;
-	padding: 0;
+ol,ul {
+    list-style: none;
+    padding: 0
 }
 
 li {
-	padding-inline-start: 0;
+    padding-inline-start: 0
 }
 
-.surface-1 {
-	background-color: var(--surface-1);
-	color: var(--text-2);
+.surface-1,.surface-2 {
+    background-color: var(--surface-1);
+    color: var(--text-2)
 }
 
 .surface-2 {
-	background-color: var(--surface-2);
-	color: var(--text-2);
+    background-color: var(--surface-2)
 }
 
-.surface-3 {
-	background-color: var(--surface-3);
-	color: var(--text-1);
+.surface-3,.surface-4 {
+    background-color: var(--surface-3);
+    color: var(--text-1)
 }
 
 .surface-4 {
-	background-color: var(--surface-4);
-	color: var(--text-1);
+    background-color: var(--surface-4)
 }
 
 .prose :is(hr) {
-	margin-block: var(--size-fluid-2);
+    margin-block: var(--size-fluid-2)
 }
 
-.prose :is(h2, h3, h4, h5, h6) {
-	max-inline-size: var(--size-header-3);
+.prose :is(h2,h3,h4,h5,h6) {
+    max-inline-size: var(--size-header-3);
+    margin-top: var(--size-6);
+    margin-bottom: var(--size-3)
 }
 
-.prose :is(h2, h3, h4, h5, h6) {
-	margin-top: var(--size-6);
-	margin-bottom: var(--size-3);
-}
-
-.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-	margin-top: var(--size-2);
+.prose p:not(:is(h2,h3,h4,h5,h6)+p) {
+    margin-top: var(--size-2)
 }
 
 .prose :is(blockquote) {
-	margin-top: var(--size-2);
+    margin-top: var(--size-2)
 }
 
-.prose :is(ul, ol) {
-	list-style-type: '✔️';
-	padding-left: var(--size-5);
+.prose :is(ul,ol) {
+    list-style-type: "✔️";
+    padding-left: var(--size-5)
 }
 
-.prose :is(ul, ol) li {
-	margin-block: var(--size-2);
-	padding-inline-start: var(--size-2);
-	max-inline-size: 100%;
+.prose :is(ul,ol) li {
+    margin-block: var(--size-2);
+    padding-inline-start: var(--size-2);
+    max-inline-size: 100%
 }
 
 .prose pre {
-	max-inline-size: 100%;
-	padding: 1rem;
-	border-radius: 8px;
-	tab-size: 2;
-	white-space: pre-wrap;
-	word-break: break-all;
-	margin-top: var(--size-4);
-	margin-bottom: var(--size-4);
+    padding: 1rem;
+    border-radius: 8px;
+    tab-size: 2;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin-top: var(--size-4);
+    margin-bottom: var(--size-4)
 }
 
-.prose pre code {
-	max-inline-size: 100%;
-}
-
-.prose p,
-.prose blockquote,
-.prose blockquote p {
-	max-inline-size: 100%;
+.prose blockquote,.prose blockquote p,.prose p,.prose pre,.prose pre code {
+    max-inline-size: 100%
 }
 
 .prose :is(table) {
-	margin-top: var(--size-4);
+    margin-top: var(--size-4)
 }
 
-.prose :where(table tr:hover td), :where(tbody tr:nth-child(2n):hover td) {
-	background-color: var(--surface-4);
+.prose :where(table tr:hover td),:where(tbody tr:nth-child(2n):hover td) {
+    background-color: var(--surface-4)
 }
 
 .fa-solid {
-	font-weight: 900;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 1;
-	text-rendering: auto;
-	vertical-align: text-bottom;
-	height: var(--font-size-2);
-	width: var(--font-size-2);
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    vertical-align: text-bottom;
+    height: var(--font-size-2);
+    width: var(--font-size-2)
 }
 
-.fa-database {
-	background-color: var(--text-2);
-    -webkit-mask:  url('/assets/database-solid.svg') no-repeat 50% 50%;
-    mask: url('/assets/database-solid.svg') no-repeat 50% 50%;
+.fa-database,.fa-diagram-predecessor {
+    background-color: var(--text-2);
+    -webkit-mask: url(/assets/database-solid.svg)no-repeat 50% 50%;
+    mask: url(/assets/database-solid.svg)no-repeat 50% 50%
 }
 
 .fa-diagram-predecessor {
-	background-color: var(--text-2);
-    -webkit-mask:  url('/assets/diagram-successor-solid.svg') no-repeat 50% 50%;
-    mask: url('/assets/diagram-successor-solid.svg') no-repeat 50% 50%;
+    -webkit-mask: url(/assets/diagram-successor-solid.svg)no-repeat 50% 50%;
+    mask: url(/assets/diagram-successor-solid.svg)no-repeat 50% 50%
 }
 
 h2 .fa-solid {
-	height: var(--font-size-7);
-	width: var(--font-size-7);
+    height: var(--font-size-7);
+    width: var(--font-size-7)
 }
