@@ -3,6 +3,7 @@
 A project to show UML diagrams and Merise methods, built with SvelteKit and boosted with Markdown and others stuffs.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/797b2785-7715-4a78-8318-8885749aafd3/deploy-status)](https://app.netlify.com/sites/md-catalog-af/deploys)
+[![PageSpeed](https://shields.io/badge/PageSpeed%20Insights-blue?style=flat&logo=pagespeedinsights&logoColor=%23ffffff&logoWidth=30&labelColor=%231097e0&color=%23ffffff)](https://pagespeed.web.dev/analysis/https-md-catalog-af-netlify-app/onil89youu?hl=fr&form_factor=mobile)
 
 ## :pill: Stack
 
@@ -21,9 +22,7 @@ A project to show UML diagrams and Merise methods, built with SvelteKit and boos
 
 ## :books: Documentation
 
-Documentation for diagrams is available on [Diagrams](/documentation/diagrams.md)
-
-Documentation for requirements is available on [Requirements](/documentation/requirements.md)
+Documentation for requirements and diagrams is available on [Wiki](https://github.com/2023-cda-alt-devops-p3/md-catalog-af/wiki)
 
 ## Cloning project
 
