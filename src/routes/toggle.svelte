@@ -4,7 +4,7 @@
 	import { theme, toggleTheme } from '$lib/theme';
 </script>
 
-<button class="toggle" on:click={toggleTheme} aria-label="Toggle theme">
+<button class="toggle" on:click={toggleTheme} aria-label={$theme === 'dark' ? 'Light' : 'Dark'}>
 	{#if $theme === 'dark'}
 		<div in:fly={{ y: 10 }}>
 			<Sun />
