@@ -155,7 +155,7 @@ li {
 }
 
 .prose :is(ul, ol) {
-	list-style-type: '🔥';
+	list-style-type: '✔️';
 	padding-left: var(--size-5);
 }
 
@@ -182,4 +182,38 @@ li {
 .prose blockquote,
 .prose blockquote p {
 	max-inline-size: 100%;
-} 
+}
+
+.fa-solid {
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+	vertical-align: text-bottom;
+}
+
+.fa-database {
+	&::after {
+	  content: url('/assets/database-solid.svg');
+	  display: inline-block;
+	  height: var(--font-size-2);
+	  width: var(--font-size-2);
+	}
+  }
+
+  .fa-diagram-predecessor {
+	&::after {
+		content: url('/assets/diagram-successor-solid.svg');
+		display: inline-block;
+		height: var(--font-size-2);
+		width: var(--font-size-2);
+	  }
+  }
+
+h2 .fa-database:after, h2 .fa-diagram-predecessor:after {
+	height: var(--font-size-7);
+	width: var(--font-size-7);
+}
