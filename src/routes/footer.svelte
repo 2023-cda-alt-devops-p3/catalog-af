@@ -15,6 +15,10 @@
 		border-top: 1px solid var(--border);
 	}
 
+	footer a {
+		color: inherit;
+	}
+
 	p {
 		color: var(--text-2);
 	}

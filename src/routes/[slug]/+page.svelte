@@ -7,7 +7,7 @@
 
 <svelte:head>
 <title>{data.meta.title}</title>
-<meta property="description" content={data.meta.description} />
+<meta name="description" content={data.meta.description} />
 <meta property="og:type" content="article" />
 <meta property="og:title" content={data.meta.title} />
 </svelte:head>
@@ -63,4 +63,9 @@
 		padding: var(--size-2) var(--size-3);
 		border-radius: var(--radius-round);
 	}
+
+	.tags .fa-database:after, .tags .fa-diagram-predecessor:after {
+			height: var(--font-size-2);
+			width: var(--font-size-2);
+		}
 </style>
