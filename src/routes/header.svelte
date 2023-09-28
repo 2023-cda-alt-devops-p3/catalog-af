@@ -39,8 +39,8 @@
 		margin-block: var(--size-7);
 		font-size: var(--size-7);
 	}
-
-	.links .fa-database:after, .links .fa-diagram-predecessor:after {
+	
+	.links .fa-solid {
 		height: var(--font-size-6);
 		width: var(--font-size-6);
 	}
@@ -61,10 +61,10 @@
 			margin-block: 0;
 			font-size: var(--size-3);
 		}
-
-		.links .fa-database:after, .links .fa-diagram-predecessor:after {
-		height: var(--font-size-2);
-		width: var(--font-size-2);
-	}
+		
+		.links .fa-solid {
+			height: var(--font-size-2);
+			width: var(--font-size-2);
+		}
 	}
 </style>

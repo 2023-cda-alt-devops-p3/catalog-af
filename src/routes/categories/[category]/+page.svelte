@@ -39,6 +39,7 @@
 <style>
 	.category {
 		padding: var(--size-8);
+		text-align: center;
 	}
 	.cards {
 		display: flex;
@@ -89,5 +90,11 @@
 	
 	.description {
 		margin-top: var(--size-3);
+	}
+
+	@media (min-width: 768px) {
+		.category {
+			text-align: left;
+		}
 	}
 </style>
