@@ -1,0 +1,17 @@
+{
+    "short_name": "UmlMerise",
+    "name": "Diagrammes UML & Merise",
+    "theme_color": "#343a40",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "Scope": "/",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "/"
+  }
